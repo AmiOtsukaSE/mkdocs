@@ -92,6 +92,22 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#github" class="nav-link">GitHub上のリポジトリをダウンロードして使う方法</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1" class="nav-link">1. リポジトリのページを開く</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-code" class="nav-link">2. "Code" ボタンを押す</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-git-clone" class="nav-link">3. ターミナルでgit clone</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4" class="nav-link">4. ローカルに展開して使う</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -100,12 +116,20 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="github">GitHub上のリポジトリをダウンロードして使う方法</h1>
-<ol>
-<li>GitHubのページを開く</li>
-<li>"Code" ボタンを押す</li>
-<li>"Download ZIP" を押す、または <code>git clone</code> する</li>
-<li>ローカルに展開して使う</li>
-</ol>
+<h2 id="1">1. リポジトリのページを開く</h2>
+<p>例：https://github.com/ユーザー名/リポジトリ名</p>
+<p>私の場合は、 https://github.com/AmiOtsukaSE/mkdocs</p>
+<h2 id="2-code">2. "Code" ボタンを押す</h2>
+<p>HTTPS または SSH のURLが表示されます
+（例: https://github.com/ユーザー名/リポジトリ名.git など）</p>
+<h2 id="3-git-clone">3. ターミナルで<code>git clone</code></h2>
+<h3 id="https">HTTPSの場合</h3>
+<p>git clone https://github.com/ユーザー名/リポジトリ名.git</p>
+<h3 id="ssh">SSHの場合</h3>
+<p>git clone git@github.com:ユーザー名/リポジトリ名.git</p>
+<h2 id="4">4. ローカルに展開して使う</h2>
+<p><code>cd リポジトリ名</code>
+ここで <code>ls -a</code> などをすると <code>.git</code> ディレクトリが含まれていることを確認できます</p>
 <p>詳細手順をここに自由に書いてください。</p></div>
             </div>
         </div>
