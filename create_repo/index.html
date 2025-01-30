@@ -92,6 +92,30 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#github" class="nav-link">リポジトリすらない状況でローカルからGitHubに上げる方法</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-github-github-practice-docs" class="nav-link">1. GitHubで新規リポジトリを作成 (例: github-practice-docs)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-gitgit" class="nav-link">2. ローカルの、gitで管理したいフォルダで、Gitを初期化</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-git" class="nav-link">3. 必要ファイルをGit管理下に追加してコミット</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-github" class="nav-link">4. GitHubで新規リポジトリを作成する</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5" class="nav-link">5. リモートを登録</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-github" class="nav-link">6. コミットをGitHubへプッシュ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -100,14 +124,27 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="github">リポジトリすらない状況でローカルからGitHubに上げる方法</h1>
-<ol>
-<li>GitHub で新規リポジトリを作成 (空リポジトリ)</li>
-<li>ローカルで <code>git init</code></li>
-<li><code>git add .</code> してコミット</li>
-<li><code>git remote add origin ...</code></li>
-<li><code>git push -u origin main</code></li>
-</ol>
-<p>詳細は随時加筆してください。</p></div>
+<h2 id="1-github-github-practice-docs">1. GitHubで新規リポジトリを作成 (例: github-practice-docs)</h2>
+<p>「Initialize this repository with a README」はチェックを外しておく（空リポジトリ）</p>
+<h2 id="2-gitgit">2. ローカルの、gitで管理したいフォルダで、Gitを初期化</h2>
+<p>このディレクトリは、gitで管理したいフォルダで、GitHubに載せるもの。</p>
+<p><code>cd project_directory</code>
+<code>git init</code></p>
+<h2 id="3-git">3. 必要ファイルをGit管理下に追加してコミット</h2>
+<p><code>git add .</code> の"."は、「すべて」という意味。</p>
+<p><code>git add .</code> 
+<code>git commit -m "Initial commit for this project"</code> </p>
+<h2 id="4-github">4. GitHubで新規リポジトリを作成する</h2>
+<p>GitHubにログイン して、新規リポジトリ作成ページ を開く。</p>
+<p>「Repository name」に リポジトリ名を入力し、プライベート／パブリックを選択して Create repository する。</p>
+<p>「Initialize this repository with a README」はオフのまま(空リポジトリ)でも問題ない。</p>
+<h2 id="5">5. リモートを登録</h2>
+<p><code>git remote add origin https://github.com/&lt;ユーザー名&gt;/&lt;リポジトリ名&gt;.git</code></p>
+<p>このリポジトリの場合</p>
+<p><code>git remote add origin https://github.com/AmiOtsukaSE/mkdocs.git</code></p>
+<h2 id="6-github">6. コミットをGitHubへプッシュ</h2>
+<p><code>git push -u origin main</code></p>
+<p>★詳細は随時加筆してください。</p></div>
             </div>
         </div>
 
