@@ -1,0 +1,18 @@
+site_name: GitHub Practice Docs  # サイト名は適宜変更
+
+nav:
+  - Home: index.md
+  - GitHub使い方:
+    - ダウンロード: download_repo.md
+    - 新規作成: create_repo.md
+    - 修正アップ: modify_repo.md
+
+theme:
+  name: mkdocs
+  # 別のテーマを使う場合はここで "material" とかにする
+  
+# もしMarkdown拡張やプラグインを使う場合はこの辺りに追加
+# markdown_extensions:
+#   - admonition
+# plugins:
+#   - search
